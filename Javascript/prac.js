@@ -76,13 +76,42 @@ let obj={
 }
 
 console.log(typeof([]+[]));
+
+let v=["ganesh", "hello"]+["vinay", "hola"];
+console.log(v);
+
+console.log(typeof v);
+
+
 console.log(typeof({}+{}));
 console.log(typeof({}+[]));
 
 let vinay =new Array(5,7)
 let ganesh=Object.create(obj)
-console.log(Object.entries(obj));
+
+console.log(Object.entries(obj)); //this can return the entries in the given object
 
 console.log(typeof(vinay));
+
+
+//Loops
+
+let colors=["red","blue","green"]
+
+colors.fill(null,1)
+let gani=colors.filter((i)=>(i!=null))
+console.log(gani);
+
+colors.map((i)=>{
+    colors[i]="vinay"
+})
+
+colors.forEach((i)=>{console.log(i)})
+
+
+//object Arrays
+
+
+
 
 
