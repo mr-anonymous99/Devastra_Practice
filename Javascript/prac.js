@@ -101,6 +101,11 @@ console.log(typeof(vinay));
 //Loops
 
 let colors=["red","blue","green"]
+let colors1=["red","blue","green"]
+let colors2=["red","blue","green"]
+let colors3=["red","blue","green"]
+console.log(colors+colors1+colors2+colors3);
+
 
 colors.fill(null,1)
 let gani=colors.filter((i)=>(i!=null))
