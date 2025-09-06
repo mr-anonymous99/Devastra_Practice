@@ -81,6 +81,9 @@ console.log(typeof({}+[]));
 
 let vinay =new Array(5,7)
 let ganesh=Object.create(obj)
+ganesh.age=18;
+console.log(ganesh.age)
+//console.log(obj.age)
 console.log(Object.entries(obj));
 
 console.log(typeof(vinay));
