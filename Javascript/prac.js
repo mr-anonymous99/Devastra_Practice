@@ -90,6 +90,10 @@ let vinay =new Array(5,7)
 let ganesh=Object.create(obj)
 
 console.log(Object.entries(obj)); //this can return the entries in the given object
+ganesh.age=18;
+console.log(ganesh.age)
+//console.log(obj.age)
+console.log(Object.entries(obj));
 
 console.log(typeof(vinay));
 
