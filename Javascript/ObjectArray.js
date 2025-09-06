@@ -9,3 +9,4 @@ let fruits=["apple","banana","pineApple"]
 let nums=[1,2,3,4]
 console.log(typeof(fruits+nums));
 
+
