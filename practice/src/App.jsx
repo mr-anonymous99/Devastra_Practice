@@ -1,7 +1,8 @@
 import Profile from "./Profile.jsx"
 import ProductCard from "./Productcard"
-import Greeting from "./Greeting.jsx";
-import Idcard from "./Idcard.jsx";
+import Greeting from "./Greeting";
+import Idcard from "./Idcard";
+import Blogpost from "./Blogpost"
 import "./Greeting.css"
 function App() {
     const ProductName = "Banana";
@@ -47,9 +48,26 @@ function App() {
       price:200,
       isAvailable:true
     }]
+
+    const Blog=[{
+      id:1,
+      authour:"Vemana",
+      title:"A Coward",
+      description:"A poem goes like medipandu chudu melimai undu pttavippi chudu purugulundu"
+    },{
+      id:2,
+      authour:"Trump",
+      title:"A tariff tragedy",
+      description:"yeah this book tell about the tariff exports based on the trump politics"
+    },{
+      id:3,
+      authour:"Charlie",
+      title:"A brave soldier",
+      description:"an inspiring story about the charlie who fought against the LGBTQ and feminism in America !!"
+    }]
   
   return (
-    <div className="container">
+    <div>
       {/* <Profile/> */}
       {/* <ProductCard Pname="Banana" price={Price} available={IsAvalable}/>
       <ProductCard Pname="AratiPandu" price="1000" available={notavailable}/> */}
@@ -59,9 +77,19 @@ function App() {
 
 
       {/* this is done all thwe way at last using maps */}
-       {product.map((p)=>(
+       {/* {product.map((p)=>(
         <ProductCard Pname={p.Productname} Price={p.price} available={p.isAvailable}/>
-       ))}
+       ))} */}
+
+       {/* {
+        Blog.map((b)=>(
+          //the addition od id is due to telling that on newly adding the previous will not be reloaded  again
+          <Blogpost key={b.id} authour={b.authour} title={b.title} description={b.description}/>
+        ))
+       } */}
+
+
+
        
     </div>
   )
