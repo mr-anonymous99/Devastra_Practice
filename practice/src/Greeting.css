@@ -1,0 +1,28 @@
+*{
+    border: 0;
+}
+.product-card{
+    border: 1px solid black;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 10px 10px;
+    /* text-align: center; */
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.container{
+    margin-top:5vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.stock h3{
+    color: green;
+}
+.not h3{
+    color: red;
+}
+img{
+    height: 400px;
+    width: 500px;
+}

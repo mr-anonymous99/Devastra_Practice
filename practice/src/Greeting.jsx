@@ -1,6 +1,6 @@
 import "./Greeting.css"
 
-const Greeting = () => {
+const Greeting = (props) => {
   return (
     <div>Greeting</div>
   )
