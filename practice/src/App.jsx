@@ -16,29 +16,16 @@ function App() {
     password:""
   })
 
-
   const handleChange=(e)=>{
     setFormData({
       ...formData,
       [e.target.name]:e.target.value
     })
   }
-  const handleEmail=(e)=>{
-    // setEmail((mail)=>(email=e.target.value))
-    setEmail(e.target.value)
-  }
-
-  const handlePassword=(e)=>{
-    console.log("email is " + e.target.value);
-    // setPassword((pass)=>(password=))
-    setPassword(e.target.value)
-  }
-  const handleSubmit = (e) => {
-    // console.log(e);
-    //this can make the browser not to refresh after the submit
+  const handleSubmit=(e)=>{
     e.preventDefault()
-    console.log(`email :${formData.email} \nPassword : ${formData.password}`); 
-    alert("form submitted !!")
+    console.log(`hello email :${formData.email} with pass ${formData.password}`);
+    
   }
   
   return (
